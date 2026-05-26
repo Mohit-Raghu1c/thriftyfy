@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thriftify - Search</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    .item-row img {
+      height: 180px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .item-row {
+      transition: transform 0.2s ease;
+      border-radius: 10px;
+    }
+
+    .item-row:hover {
+      transform: scale(1.01);
+      background-color: #f8f9fa;
+    }
+
+    footer {
+      background-color: #212529;
+      color: white;
+      padding: 20px 0;
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="#">Thriftify</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+        <li class="nav-item"><a class="nav-link active" href="#">Buy</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Sell</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Login</a></li>
+      </ul>
+
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search clothes...">
+        <button class="btn btn-outline-light" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+<!-- Search + Filters -->
+<div class="container my-4">
+  <div class="row g-3">
+
+    <div class="col-md-3">
+      <select class="form-select">
+        <option>Category</option>
+        <option>Shirts</option>
+        <option>Jackets</option>
+        <option>Hoodies</option>
+      </select>
+    </div>
+
+    <div class="col-md-3">
+      <select class="form-select">
+        <option>Condition</option>
+        <option>⭐⭐⭐⭐</option>
+        <option>⭐⭐⭐</option>
+        <option>⭐⭐</option>
+      </select>
+    </div>
+
+    <div class="col-md-3">
+      <select class="form-select">
+        <option>Price Range</option>
+        <option>₹0 - ₹500</option>
+        <option>₹500 - ₹1000</option>
+        <option>₹1000+</option>
+      </select>
+    </div>
+
+    <div class="col-md-3">
+      <select class="form-select">
+        <option>Sort By</option>
+        <option>Newest</option>
+        <option>Price Low to High</option>
+        <option>Price High to Low</option>
+      </select>
+    </div>
+
+  </div>
+</div>
+
+<!-- Results List -->
+<div class="container">
+
+  <div class="row item-row p-3 mb-3 align-items-center shadow-sm">
+    <div class="col-md-3">
+      <img src="img/items/item (1).jpg" class="w-100" alt="item">
+    </div>
+    <div class="col-md-6">
+      <h5>Denim Jacket</h5>
+      <p class="mb-1">Condition: ⭐⭐⭐⭐</p>
+      <p class="text-muted">Brand: Levi's | Size: M | Color: Blue</p>
+    </div>
+    <div class="col-md-3 text-md-end">
+      <h5 class="text-success">₹800</h5>
+      <button class="btn btn-primary btn-sm">View Item</button>
+    </div>
+  </div>
+
+  <div class="row item-row p-3 mb-3 align-items-center shadow-sm">
+    <div class="col-md-3">
+      <img src="img/items/item (2).jpg" class="w-100" alt="item">
+    </div>
+    <div class="col-md-6">
+      <h5>Casual Shirt</h5>
+      <p class="mb-1">Condition: ⭐⭐⭐</p>
+      <p class="text-muted">Brand: H&M | Size: L | Color: White</p>
+    </div>
+    <div class="col-md-3 text-md-end">
+      <h5 class="text-success">₹400</h5>
+      <button class="btn btn-primary btn-sm">View Item</button>
+    </div>
+  </div>
+
+  <div class="row item-row p-3 mb-3 align-items-center shadow-sm">
+    <div class="col-md-3">
+      <img src="img/items/item (3).jpg" class="w-100" alt="item">
+    </div>
+    <div class="col-md-6">
+      <h5>Hoodie</h5>
+      <p class="mb-1">Condition: ⭐⭐⭐</p>
+      <p class="text-muted">Brand: Nike | Size: M | Color: Black</p>
+    </div>
+    <div class="col-md-3 text-md-end">
+      <h5 class="text-success">₹600</h5>
+      <button class="btn btn-primary btn-sm">View Item</button>
+    </div>
+  </div>
+
+</div>
+
+<!-- Footer -->
+<footer class="text-center mt-5">
+  <div class="container">
+    <p>&copy; 2026 Thriftify | Buy • Sell • Donate</p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

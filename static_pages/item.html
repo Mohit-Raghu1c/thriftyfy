@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thriftify - Item</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    .carousel img {
+      height: 400px;
+      object-fit: cover;
+    }
+
+    .item-info {
+      padding: 20px;
+    }
+
+    footer {
+      background-color: #212529;
+      color: white;
+      padding: 20px 0;
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="#">Thriftify</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Buy</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Sell</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Login</a></li>
+      </ul>
+
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search clothes...">
+        <button class="btn btn-outline-light" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+<!-- Item Section -->
+<div class="container my-5">
+  <div class="row">
+
+    <!-- Left: Carousel -->
+    <div class="col-lg-6 mb-4">
+      <div id="itemCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+
+          <div class="carousel-item active">
+            <img src="img/items/item (1).jpg" class="d-block w-100" alt="Item">
+          </div>
+
+          <div class="carousel-item">
+            <img src="img/items/item (2).jpg" class="d-block w-100" alt="Item">
+          </div>
+
+          <div class="carousel-item">
+            <img src="img/items/item (3).jpg" class="d-block w-100" alt="Item">
+          </div>
+
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#itemCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+
+        <button class="carousel-control-next" type="button" data-bs-target="#itemCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Right: Item Info -->
+    <div class="col-lg-6 item-info">
+      <h2>Denim Jacket</h2>
+      <h4 class="text-success">₹800</h4>
+      <p>Condition: ⭐⭐⭐⭐</p>
+
+      <hr>
+
+      <p>
+        This is a high-quality denim jacket in excellent condition. Perfect for casual wear.
+      </p>
+
+      <ul>
+        <li>Brand: Levi's</li>
+        <li>Size: M</li>
+        <li>Color: Blue</li>
+        <li>Used: 2-3 times</li>
+      </ul>
+
+
+      <a class="btn btn-outline-secondary" href="user_contact.html">Contact Seller</a>
+    </div>
+
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="text-center">
+  <div class="container">
+    <p>&copy; 2026 Thriftify | Buy • Sell • Donate</p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,97 @@
+    body{
+      min-height: 100vh;
+    }    
+    
+    .carousel img {
+      height: 400px;
+      object-fit: cover;
+    }
+
+    .item-info {
+      padding: 20px;
+    }
+
+    footer {
+      background-color: #212529;
+      color: white;
+      padding: 20px 0;
+    }
+
+
+    .card-ver {
+      border: none;
+      border-radius: 12px;
+      overflow: hidden;
+      transition: all 0.3s ease;
+    }
+
+    .card-ver:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    }
+
+    .hero-carousel {
+      width: 80%;
+      margin: auto;
+    }
+
+    .profile-card {
+      background: #f8f9fa;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+
+    .item-row {
+      transition: transform 0.2s ease;
+      border-radius: 10px;
+    }
+
+
+
+    .item-row:hover {
+      transform: scale(1.01);
+      background-color: #f8f9fa;
+    }
+    .form-section {
+      background: #f8f9fa;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .form-container {
+      max-width: 500px;
+      margin: auto;
+      background: #f8f9fa;
+      padding: 25px;
+      border-radius: 10px;
+    }
+
+    .item-row img {
+      height: 180px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+
+
+.profile-card {
+      margin: auto;
+      background: #f8f9fa;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+
+    .info-label {
+      font-weight: 600;
+      color: #555;
+    }
+
+    .info-value {
+      background: white;
+      padding: 10px;
+      border-radius: 6px;
+      border: 1px solid #ddd;
+    }
+

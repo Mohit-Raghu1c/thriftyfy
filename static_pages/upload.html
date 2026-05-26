@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thriftify - Upload Item</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    .form-section {
+      background: #f8f9fa;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    footer {
+      background-color: #212529;
+      color: white;
+      padding: 20px 0;
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="#">Thriftify</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Buy</a></li>
+        <li class="nav-item"><a class="nav-link active" href="#">Sell</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Login</a></li>
+      </ul>
+
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search clothes...">
+        <button class="btn btn-outline-light" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+<!-- Upload Form -->
+<div class="container my-5">
+  <div class="form-section">
+    <h3 class="mb-4">Upload Item</h3>
+
+    <form>
+      <div class="row g-3">
+
+        <!-- Title -->
+        <div class="col-md-6">
+          <label class="form-label">Title</label>
+          <input type="text" class="form-control" placeholder="e.g. Denim Jacket">
+        </div>
+
+        <!-- Price -->
+        <div class="col-md-6">
+          <label class="form-label">Price (₹)</label>
+          <input type="number" class="form-control" placeholder="e.g. 800">
+        </div>
+
+        <!-- Brand -->
+        <div class="col-md-4">
+          <label class="form-label">Brand</label>
+          <input type="text" class="form-control" placeholder="e.g. Levi's">
+        </div>
+
+        <!-- Size -->
+        <div class="col-md-4">
+          <label class="form-label">Size</label>
+          <select class="form-select">
+            <option>Select Size</option>
+            <option>S</option>
+            <option>M</option>
+            <option>L</option>
+            <option>XL</option>
+          </select>
+        </div>
+
+        <!-- Condition -->
+        <div class="col-md-4">
+          <label class="form-label">Condition</label>
+          <select class="form-select">
+            <option>Select Condition</option>
+            <option>⭐⭐⭐⭐ (Like New)</option>
+            <option>⭐⭐⭐ (Good)</option>
+            <option>⭐⭐ (Used)</option>
+          </select>
+        </div>
+
+        <!-- Color -->
+        <div class="col-md-6">
+          <label class="form-label">Color</label>
+          <input type="text" class="form-control" placeholder="e.g. Blue">
+        </div>
+
+        <!-- Category -->
+        <div class="col-md-6">
+          <label class="form-label">Category</label>
+          <select class="form-select">
+            <option>Select Category</option>
+            <option>Shirt</option>
+            <option>Jacket</option>
+            <option>Hoodie</option>
+          </select>
+        </div>
+
+        <!-- Description -->
+        <div class="col-12">
+          <label class="form-label">Description</label>
+          <textarea class="form-control" rows="4" placeholder="Describe your item..."></textarea>
+        </div>
+
+        <!-- Images -->
+        <div class="col-12">
+          <label class="form-label">Upload Images</label>
+          <input type="file" class="form-control" multiple>
+        </div>
+
+        
+
+      
+        <div>
+
+        <label class="form-label d-block mb-2">Type</label>
+
+            <div class="btn-group w-100" role="group">
+
+            <input type="radio" class="btn-check" name="type" id="sell" autocomplete="off"  value="deposit">
+            <label class="btn btn-outline-success" for="sell">
+                Sell
+            </label>
+
+            <input type="radio" class="btn-check" name="type" id="donate" autocomplete="off" value="credit" checked>
+            <label class="btn btn-outline-danger" for="donate">
+                Donate
+            </label>
+
+            </div>
+        </div>
+
+        <!-- Buttons -->
+        <div class="col-12 text-end">
+          <button type="reset" class="btn btn-outline-secondary">Reset</button>
+          <button type="submit" class="btn btn-primary">Upload Item</button>
+        </div>
+
+       </div>
+    </form>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="text-center">
+  <div class="container">
+    <p>&copy; 2026 Thriftify | Buy • Sell • Donate</p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
